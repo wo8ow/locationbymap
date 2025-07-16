@@ -1,5 +1,5 @@
 function asignarBarrios() {
-  const hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("des_cartilla_salud"); // Ajusta si tu hoja tiene otro nombre
+  const hoja = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("des_cartilla_salud"); 
   const datos = hoja.getDataRange().getValues();
   
   const geojsonFile = DriveApp.getFilesByName("barrios.geojson").next();
